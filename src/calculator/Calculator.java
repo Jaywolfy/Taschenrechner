@@ -57,7 +57,11 @@ public class Calculator {
         } else if (operator == '*') {
             System.out.println("\nThe result is: " + (myFirstNumber * mySecondNumber));
         } else if (operator == '/') {
-            System.out.println("\nThe result is: " + (myFirstNumber / mySecondNumber));
+            if (mySecondNumber == 0) {
+                System.out.println("\n\nError: Division by zero is not allowed.");
+            } else {
+                System.out.println("\nThe result is: " + (myFirstNumber / mySecondNumber));
+            }
         } else { 
             System.out.println("\n\nInvalid operator");
         }
