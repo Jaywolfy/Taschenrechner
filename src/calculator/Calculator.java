@@ -44,8 +44,10 @@ public class Calculator {
 
 		System.out.print("\n\nPlease enter the first number: ");
         myFirstNumber = sc.nextInt();
+
         System.out.print("Please enter the second number: ");
         mySecondNumber = sc.nextInt();
+        
         System.out.print("\nPlease enter the operator: ");
         operator = sc.next().charAt(0);
 
@@ -66,9 +68,7 @@ public class Calculator {
             System.out.println("\n\nInvalid operator");
         }
 		
-
         /*Ausgabe*/
-
         sc.close();
     }
 }
